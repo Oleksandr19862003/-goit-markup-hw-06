@@ -843,9 +843,6 @@ img {
   display: inline-block;
   color: var(--accent-color);
 }
-.comment-input {
-  display: inline-block;
-}
 .submit-btn {
   margin-top: 30px;
   margin-left: auto;
