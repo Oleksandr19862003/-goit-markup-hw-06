@@ -76,7 +76,7 @@
         <!-- section features -->
         <section class="section-features">
             <div class="container">
-                <h2 class="features-title">Особенности</h2>
+                <h2 class="features-title visually-hidden">Особенности</h2>
                 <ul class="features">
                     <li class="details">
                         <h3 class="details-items icon-antenna">Внимание к деталям</h3>
@@ -408,7 +408,7 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
+                <p class="footer-form-title">Подпишитесь на рассылку</p>
                 <div class="display-flex">
                     <label class="footer-label">
                         <input class="footer-label-input" type="email" placeholder="E-mail" name='name' required
@@ -458,14 +458,13 @@
                         </svg>
                     </span>
                 </label>
-                <label class="contact-label">Комментарий
-                    <textarea class="comment " name="comment" rows="6" placeholder="Введите текст">
-                    </textarea>
-                </label>
+                <label for="textarea-comment" class="contact-label">Комментарий</label>
+                    <textarea class="comment " name="comment" 
+                    placeholder="Введите текст" id="textarea-comment"></textarea>                    
                 <span class="contact-label-wrapper">
-                    <input type="checkbox" value="agreement" id="agree">
-                    <label for="agree" class="agreement">Соглашаюсь с рассылкой и принимаю
-                        <a class="agreement-link" href="#">Условия договора</a>
+                    <input class="form-agreement-check visually-hidden" type="checkbox" value="agreement" id="agree">
+                    <label for="agree" class="form-agreement">Соглашаюсь с рассылкой и принимаю
+                        <a class="form-agreement-link" href="#">Условия договора</a>
                     </label>
                 </span>
                 <button class="submit-btn" type="submit">Отправить</button>
