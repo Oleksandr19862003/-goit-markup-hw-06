@@ -640,11 +640,11 @@ img {
 }
 .project-list {
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 26px;
   box-sizing: border-box;
   text-align: left;
   background: var(--common-lite-color);
-  /* border: 0.01px solid #eeeeee; */
+  border: 1px solid #eeeeee;
 }
 .project-list:nth-child(3n + 1) {
   margin-left: 0px;
