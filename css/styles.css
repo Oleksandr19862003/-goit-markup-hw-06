@@ -783,6 +783,9 @@ img {
   padding: 0;
   margin: 0;
 }
+.modal-form:hover {
+  cursor: pointer;
+}
 .form-title {
   margin-bottom: 12px;
   font-weight: var(--bold-font-weight);
