@@ -550,9 +550,6 @@ img {
 .footer-form {
   margin-left: 93px;
 }
-.footer-form:hover {
-  cursor: pointer;
-}
 .footer-form-title {
   margin-bottom: 20px;
   font-weight: bold;
@@ -594,6 +591,14 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border-color 250ms var(--common-cubic-bezier);
+}
+.footer-label-input:hover,
+.footer-label-input:focus {
+  cursor: pointer;
+  border-color: var(--accent-color);
+  color: var(--common-lite-color);
+  outline: none;
 }
 /* footer end */
 
@@ -798,7 +803,7 @@ img {
 .contact-label {
   position: relative;
   margin-bottom: 10px;
-  display: block;
+  display: inline-block;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
@@ -813,7 +818,7 @@ img {
   color: var(--title-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  transition: border 250ms var(--common-cubic-bezier);
+  transition: border-color 250ms var(--common-cubic-bezier);
 }
 .contact-label-icon {
   position: absolute;
@@ -821,15 +826,7 @@ img {
   left: 14px;
   width: 13px;
   height: 13px;
-  transition: fill 250ms var(--common-cubic-bezier),
-    border-color 250ms var(--common-cubic-bezier);
-}
-.contact-label-form:focus,
-.contact-label-form:focus + .contact-label-icon,
-.comment:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  outline: none;
+  transition: fill 250ms var(--common-cubic-bezier);
 }
 .comment {
   margin-top: 4px;
@@ -844,11 +841,22 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms var(--common-cubic-bezier);
+  transition: border-color 250ms var(--common-cubic-bezier);
 }
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.contact-label-form:focus,
+.contact-label-form:hover,
+.contact-label-form:focus + .contact-label-icon,
+.contact-label-form:hover + .contact-label-icon,
+.comment:focus,
+.comment:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
+}
+
 .form-agreement {
   margin-top: 20px;
   width: 100%;
@@ -877,7 +885,8 @@ img {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
 }
-.form-agreement-check:focus + .form-agreement::before {
+.form-agreement-check:focus + .form-agreement::before,
+.form-agreement-check:hover + .form-agreement::before {
   border: 2px solid var(--accent-color);
 }
 .form-agreement-link {
