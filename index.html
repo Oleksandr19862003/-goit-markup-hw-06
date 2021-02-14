@@ -408,7 +408,7 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <p class="footer-form-title">Подпишитесь на рассылку</p>
+                <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
                 <div class="display-flex">
                     <label class="footer-label">
                         <input class="footer-label-input" type="email" placeholder="E-mail" name='name' required
@@ -433,40 +433,33 @@
                 </svg>
             </button>
             <form action="#" class="modal-form">
-                <b class="form-title">Оставьте свои данные мы вам перезвоним </b>
+                <h2 class="form-title">Оставьте свои данные мы вам перезвоним </h2>
                 <label class="contact-label">Имя
-                    <span class="contact-label-wrapper">
-                        <input class="contact-label-form" type='text' name='name' required>
-                        <svg class="contact-label-icon">
-                            <use href="./images/sprite.svg#person-black"></use>
-                        </svg>
-                    </span>
+                    <input class="contact-label-form" type='text' name='name' required>
+                    <svg class="contact-label-icon">
+                        <use href="./images/sprite.svg#person-black"></use>
+                    </svg>
                 </label>
                 <label class="contact-label">Телефон
-                    <span class="contact-label-wrapper">
-                        <input class="contact-label-form" type='tel' name='phone-number' required>
-                        <svg class="contact-label-icon">
-                            <use href="./images/sprite.svg#phone-black"></use>
-                        </svg>
-                    </span>
+                    <input class="contact-label-form" type='tel' name='phone-number' required>
+                    <svg class="contact-label-icon">
+                        <use href="./images/sprite.svg#phone-black"></use>
+                    </svg>
                 </label>
                 <label class="contact-label">Почта
-                    <span class="contact-label-wrapper">
-                        <input class="contact-label-form" type='email' name='user-mail' required>
-                        <svg class="contact-label-icon">
-                            <use href="./images/sprite.svg#email-black"></use>
-                        </svg>
-                    </span>
+                    <input class="contact-label-form" type='email' name='user-mail' required>
+                    <svg class="contact-label-icon">
+                        <use href="./images/sprite.svg#email-black"></use>
+                    </svg>
                 </label>
-                <label for="textarea-comment" class="contact-label">Комментарий</label>
-                    <textarea class="comment " name="comment" 
-                    placeholder="Введите текст" id="textarea-comment"></textarea>                    
-                <span class="contact-label-wrapper">
-                    <input class="form-agreement-check visually-hidden" type="checkbox" value="agreement" id="agree">
-                    <label for="agree" class="form-agreement">Соглашаюсь с рассылкой и принимаю
-                        <a class="form-agreement-link" href="#">Условия договора</a>
-                    </label>
-                </span>
+                <label for="textarea-comment" class="contact-label">Комментарий
+                </label>
+                <textarea class="comment " name="comment" placeholder="Введите текст" id="textarea-comment">
+                </textarea>
+                <input class="form-agreement-check visually-hidden" type="checkbox" value="agreement" id="agree">
+                <label for="agree" class="form-agreement">Соглашаюсь с рассылкой и принимаю
+                    <a class="form-agreement-link" href="#">Условия договора</a>
+                </label>
                 <button class="submit-btn" type="submit">Отправить</button>
             </form>
         </div>

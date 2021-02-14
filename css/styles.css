@@ -550,6 +550,9 @@ img {
 .footer-form {
   margin-left: 93px;
 }
+.footer-form:hover {
+  cursor: pointer;
+}
 .footer-form-title {
   margin-bottom: 20px;
   font-weight: bold;
@@ -571,6 +574,7 @@ img {
   line-height: 1.875;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--common-lite-color);
   pointer-events: auto;
@@ -789,6 +793,7 @@ img {
   color: var(--title-text-color);
 }
 .contact-label {
+  position: relative;
   margin-bottom: 10px;
   display: block;
   font-size: 12px;
@@ -796,10 +801,6 @@ img {
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
   cursor: pointer;
-}
-.contact-label-wrapper {
-  position: relative;
-  margin-top: 4px;
 }
 .contact-label-form {
   padding-left: 42px;
@@ -817,7 +818,6 @@ img {
   left: 14px;
   width: 13px;
   height: 13px;
-  transform: translateY(-50%);
   transition: fill 250ms var(--common-cubic-bezier),
     border-color 250ms var(--common-cubic-bezier);
 }
@@ -853,6 +853,8 @@ img {
   line-height: 1.714;
   letter-spacing: var(--letter-spacing);
   display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   color: var(--secondary-text-color);
 }
@@ -860,7 +862,6 @@ img {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  display: inline-block;
   content: "";
   border-radius: 2px;
   border: 2px solid var(--title-text-color);
@@ -891,6 +892,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--common-lite-color);
